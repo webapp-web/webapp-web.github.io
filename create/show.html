@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header class="top">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a href="../index.html"><h2 class="text-light">Notes App</h2></a>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class ="nav-link" href="../edit/change.html">Edit</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="enter"> 
+        <form>
+            <div class="form-group m-5">
+                <label>Title</label>
+                <textarea  id="title" name="title" placeholder="Enter Title" rows="1" class="form-control" required></textarea>
+                <br>
+                <label>Content</label>
+                <textarea aria-required="true"  placeholder="Enter text" id="data" rows="10" class="form-control"></textarea>
+                <br>
+                <button onclick="storeData()" class="btn btn-primary">save</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="./create.js"></script>
+</html>
